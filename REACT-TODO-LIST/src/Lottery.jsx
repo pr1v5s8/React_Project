@@ -16,8 +16,9 @@ export default function Lottery({n, winningSum}){
         <div>
             <h1>Lottery Game :</h1>
             <Ticket ticket={ticket}/>
+            <br />
             <button onClick={buyTicket}>Buy New Ticket</button>
-            <h3>{isWinning && "Congratulations, you won!"}</h3>
+            <h3 style={{color: "red", backgroundColor: "white"}}>{isWinning && "Congratulations, you won!"}</h3>
         </div>
     )
 }
