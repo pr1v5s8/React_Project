@@ -1,17 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import TodoList from './TodoList'
+import Lottery from './Lottery';
+import Ticket from './Ticket'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-    <TodoList/>
+    <Lottery n={4} winningSum={20}/>
     </>
   )
 }
 
-export default App
+export default App;
