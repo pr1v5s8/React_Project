@@ -36,6 +36,7 @@ import { genTicket, sum } from "./Helper";
 export default function Lottery(){
     let [ticket, setTicket] = useState(genTicket(3));
     let isWinning = sum(ticket) === 15;
+    
     let buyTicket = () => {
         setTicket(genTicket(3));
     };
