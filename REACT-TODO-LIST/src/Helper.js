@@ -1,4 +1,18 @@
-function genRandomNo(n){
+// function genRandomNo(n){
+//     let arr = new Array(n);
+//     for(let i=0; i<n; i++){
+//         arr[i] = Math.floor(Math.random() * 10);
+//     }
+//     return arr;
+// }
+
+// function sum(arr){
+//     return arr.reduce((sum, curr) => sum + curr, 0);
+// }
+
+// export {genRandomNo, sum};
+
+function genTicket(n){
     let arr = new Array(n);
     for(let i=0; i<n; i++){
         arr[i] = Math.floor(Math.random() * 10);
@@ -7,7 +21,7 @@ function genRandomNo(n){
 }
 
 function sum(arr){
-    return arr.reduce((sum, curr) => sum + curr, 0);
+    return arr.reduce((acc, val) => acc + val,0);
 }
 
-export {genRandomNo, sum};
+export { genTicket, sum };

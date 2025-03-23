@@ -3,3 +3,16 @@
     transition: 0.7s;
 }
 
+.ticket{
+    border: 2px solid black;
+    border-radius: 15px;
+    height: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    /* justify-content: center; */
+    align-items: center;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: whitesmoke;
+}
+

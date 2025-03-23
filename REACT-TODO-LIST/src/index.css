@@ -97,9 +97,9 @@ button:focus-visible {
 }
 
 #input{
-  height: 25px;
-  border-radius: 10px;
-  margin-right: 10px;
+  height: 25px !important;
+  border-radius: 10px !important;
+  margin-right: 10px !important;
 }
 
 #li_btn{
