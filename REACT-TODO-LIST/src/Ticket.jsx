@@ -1,14 +1,15 @@
+import { v4 as uuidv4 } from "uuid";
 import TicketNum from "./TicketNum";
 import "./Ticket.css";
 
-export default function Ticket({ticket}){
-    return(
-        <div className="Ticket">
+export default function Ticket({arr}){
+    return (
+        <div>
             {
-                ticket.map((num, idx) => (
-                    <TicketNum num={num} key={idx}/>
-                ))
+                arr.map((num, key) => (
+                    <TicketNum num={num} key={uuidv4()} />
+                ) )
             }
         </div>
-    );
+    )
 }
